@@ -12,27 +12,25 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
 
 </head>
 <body>
   <header class="header-section mb-4">
     <div class="main-menu">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
           <div><a class="navbar-brand " href="#"><img src="img/icons8-code-85.png" alt="logo"></a></div>
-          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
-                <!-- <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About Me</a>
+                  <a class="nav-link m-0" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Work Experience</a>
+                  <a class="nav-link" href="#work-experience">Work Experience</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Projects</a>
@@ -59,5 +57,34 @@
       </div>
     </div>
   </div>
+  <div class="container mt-5 work-experience" id="work-experience">
+    <div class="d-flex justify-content-center mb-5">
+      <p class="fs-2 heading">My Past Work Experience</p>
+    </div>
+    <div class="row work-item m-3">
+        <div class="col m-auto">
+          <img src="img/cyient-slate-std-rgb.jpg " class="rounded-circle mx-auto d-block" alt="Cyient Logo" width="200" height="200"/>
+        </div>
+        <div class="col p-4 job-description">
+          <div class="justify-content-end date"></div>
+          <p class="fs-4">Used transfer learning on YOLOv2 deep neural net to redeuce image annotation time of images with distortions and color imbalances from days to hours</p>
+          <p class="fs-4">Developed a tool for US Wells that automates the process of extracting sepcific regulatory data like API and 
+            Permit numbers from high volume of oil commision regulatory documents(pdf) usng pytessract's OCR, 
+            and export to CSV files helping reduce the overall execution time from 3 days to 4 hours </p>
+          <p class="fs-4">Developed an in-house RPA tool using PyQt GUI framework, Pywin32 and PyAutoGUI libraries, to enable the
+            user to setup data control flows spanning across multiple windows applications and automate any volume
+            of mundane repetitive tasks, which helps to improve the productivity of user by at least 2-3 hours per day</p>
+        </div>
+      </div>
+    <div class="row work-item m-3">
+      <div class="col m-auto">
+        <img src="img/New_Tech_M_Logo_High-res_highres.jpg " class="rounded-circle mx-auto d-block" alt="Cyient Logo" width="200" height="200"/>
+      </div>
+        <div class="col p-4 job-description">
+          <p class="fs-4">Implemented behavioral testing using Python and Selenium to improve the end user experience of Data Quality Tool for American Bureau of Shipping(ABS)</p>
+        </div>
+    </div>
+  </div>
+  <div class="container"></div>
 </body>
 </html>

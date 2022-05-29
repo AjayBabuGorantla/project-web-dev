@@ -2,17 +2,52 @@
     padding: 0px;
 }
 
+
+
 .navbar-nav .nav-item{
     /* margin: 30px; */
     background-color: #495fa6;
-    padding: 10px;
+    padding: 0px;
     background-size:contain;
     /* border-radius: 15px; */
     width: 200px;
+    margin: 0;
 }
 
 .navbar-nav .nav-link{
     color:#f6ae84;
     text-align: center;
     font-size: 20px;
+}
+
+.navbar-nav .nav-item:hover{
+    background-color: #f6ae84;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #495fa6;
+}
+
+#navbarNav{
+    background-color: #495fa6;
+    /* height: 60px; */
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+
+.work-experience .heading{
+    color: #495fa6;
+    font-style:italic;
+}
+
+.work-item{
+    border: #495fa6;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.job-description{
+    text-align: justify;
 }
