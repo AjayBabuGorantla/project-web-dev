@@ -2,8 +2,6 @@
     padding: 0px;
 }
 
-
-
 .navbar-nav .nav-item{
     /* margin: 30px; */
     background-color: #495fa6;
@@ -50,4 +48,27 @@
 
 .job-description{
     text-align: justify;
+}
+
+.heading{
+    color: #495fa6;
+    font-style:italic;
+}
+.form-label{
+    color: #495fa6;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #495fa6;
+    width: 200px;
+    color: #f6ae84;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: #f6ae84;
+    color: #495fa6;
+    border-color: #495fa6;
 }
