@@ -35,6 +35,10 @@
     text-align: center;
 }
 
+.about-row{
+    padding: 5em;
+}
+
 .work-experience .heading{
     color: #495fa6;
     font-style:italic;
@@ -71,4 +75,9 @@
     background-color: #f6ae84;
     color: #495fa6;
     border-color: #495fa6;
+}
+
+.card:hover{
+    border: #f6ae84;
+    border-style: solid;
 }

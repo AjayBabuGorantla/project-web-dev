@@ -44,8 +44,8 @@
       </nav>
     </div>
   </header>
-  <div class="container mx-8 mt-5 about" id="about">
-    <div class="row">
+  <div class="container mx-8 mt-5 vh-100 about" id="about">
+    <div class="row about-row">
       <div class="col m-auto">
         <img src="img/Profile_Pic.jpg" class="rounded-circle" alt="Profile Picture" width="300" height="300"/>
       </div>
@@ -57,7 +57,7 @@
       </div>
     </div>
   </div>
-  <div class="container mt-5 work-experience" id="work-experience">
+  <div class="container work-experience" id="work-experience">
     <div class="d-flex justify-content-center mb-5">
       <p class="fs-2 heading">My Past Work Experience</p>
     </div>
@@ -92,30 +92,32 @@
     <div class="row m-3">
       <div class="col m-2 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
-          <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project" class="card-block stretched-link text-decoration-none"></a>
-          <img src="img/Profile_Pic.jpg" class="m-2 rounded-circle" alt="...">
+          <a href="https://github.com/AjayBabuGorantla/CTran_Data_Pipeline" class="card-block stretched-link text-decoration-none"></a>
+          <img src="img/kafka_logo.png" class="m-auto rounded-circle" alt="Kafka Logo" height="220" width="250">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Developed an end-to-end Kafka data transport pipeline for C-Tran bus systems using Python, Confluent Kafka, Google Cloud, PostgreSQL</p>
+            <p class="card-text"></p>
             <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
       </div>
       <div class="col m-2 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
-          <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project" class="card-block stretched-link text-decoration-none"></a>
-          <img src="img/Profile_Pic.jpg" class="m-2 rounded-circle" alt="...">
+          <a href="https://github.com/AjayBabuGorantla/CNN_MNIST_Fashion_Classifier" class="card-block stretched-link text-decoration-none"></a>
+          <img src="img/deep-learning.png" class="m-auto p-5" alt="Wired Brain" height="220" width="250">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Developed a Convolutional Neural Network model that classifies images of 10 categories of clothes. 
+              Trained the model using publicly available MNIST Fashion dataset</p>
             <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
       </div>
       <div class="col m-2 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
-          <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project" class="card-block stretched-link text-decoration-none"></a>
-          <img src="img/Profile_Pic.jpg" class="m-2 rounded-circle" alt="...">
+          <a href="https://github.com/AjayBabuGorantla/AI_2048" class="card-block stretched-link text-decoration-none"></a>
+          <img src="img/ai_bot.png" class="m-auto p-5" alt="AI Bot" height="220" width="250">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Built an AI bot that plays the classic 2048 game by itself. It either uses MiniMax Algorithm or the State-of-the-art Monte Carlo Tree Search Algorithm</p>
             <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
@@ -139,8 +141,8 @@
     </div>
     <div class="row m-3">
       <div class="col">
-        <label for="input-message" class="form-label">Express your heart out!</label>
-        <textarea class="form-control" id="contact-message" rows="5" placeholder="Feel free to be yourself :)"></textarea>
+        <label for="input-message" class="form-label">Message!</label>
+        <textarea class="form-control" id="contact-message" rows="5" placeholder="Feel free to be yourself :)" aria-label="message"></textarea>
       </div>
     </div>
     <div class="row m-3">
