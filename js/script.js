@@ -47,10 +47,6 @@ document.querySelector(".contact").addEventListener('submit', function(event){
     }
 
     else{
-        inputName=""
-        inputEmail=""
-        inputMessage=""
-
         const alertPlaceHolder = document.getElementById("alertPlaceHolder")
 
         console.log(alertPlaceHolder)
@@ -67,17 +63,20 @@ document.querySelector(".contact").addEventListener('submit', function(event){
             alertPlaceHolder.append(wrapper)
           }
 
+        let formElement = document.getElementById("contact-form")
+        formElement.reset()
+
         alert('Thank you! Your message has been received. Will reach out to you at the earliest :)', 'success')
         event.preventDefault()
     }
 })
 
-document.querySelector(".contact").addEventListener('reset', function(){
+document.querySelector(".contact").addEventListener('reset', function(event){
     let inputName = document.getElementById("name").value
     let inputEmail = document.getElementById("email").value
     let inputMessage = document.getElementById("message").value
 
-    inputName=""
-    inputEmail=""
-    inputMessage=""
+    let formElement = document.getElementById("contact-form")
+    formElement.reset()
+
 })
