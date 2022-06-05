@@ -96,8 +96,6 @@
           <img src="img/kafka_logo.png" class="m-auto rounded-circle" alt="Kafka Logo" height="220" width="250">
           <div class="card-body">
             <p class="card-text">Developed an end-to-end Kafka data transport pipeline for C-Tran bus systems using Python, Confluent Kafka, Google Cloud, PostgreSQL</p>
-            <p class="card-text"></p>
-            <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
       </div>
@@ -108,7 +106,6 @@
           <div class="card-body">
             <p class="card-text">Developed a Convolutional Neural Network model that classifies images of 10 categories of clothes. 
               Trained the model using publicly available MNIST Fashion dataset</p>
-            <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
       </div>
@@ -118,41 +115,42 @@
           <img src="img/ai_bot.png" class="m-auto p-5" alt="AI Bot" height="220" width="250">
           <div class="card-body">
             <p class="card-text">Built an AI bot that plays the classic 2048 game by itself. It either uses MiniMax Algorithm or the State-of-the-art Monte Carlo Tree Search Algorithm</p>
-            <!-- <a href="https://github.com/AjayBabuGorantla/CS510-Data-Engineering/tree/main/Project"></a> -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container mt-5 projects" id="contact">
+  <div class="container mt-5 contact" id="contact">
     <div class="d-flex justify-content-center mb-5">
       <p class="fs-2 heading">Interested in speaking to me?</p>
     </div>
-    <form></form>
-    <div class="row m-3">
-      <div class="col">
-        <label for="input-name" class="form-label">Name</label>
-        <input type="text" class="form-control" placeholder="Ex: Ajay Babu Gorantla" aria-label="name">
+    <form action="">
+      <div class="row m-3">
+        <div class="col">
+          <label for="input-name" class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Ex: Ajay Babu Gorantla" aria-label="name" id="name">
+        </div>
+        <div class="col">
+          <label for="input-email" class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="username@host.com" aria-label="email" id="email">
+        </div>
       </div>
-      <div class="col">
-        <label for="input-email" class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="username@host.com" aria-label="email">
+      <div class="row m-3">
+        <div class="col">
+          <label for="input-message" class="form-label">Message!</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Feel free to be yourself :)" aria-label="message"></textarea>
+        </div>
       </div>
-    </div>
-    <div class="row m-3">
-      <div class="col">
-        <label for="input-message" class="form-label">Message!</label>
-        <textarea class="form-control" id="contact-message" rows="5" placeholder="Feel free to be yourself :)" aria-label="message"></textarea>
+      <div id="alertPlaceHolder"></div>
+      <div class="row m-3">
+        <div class="col d-flex justify-content-center">
+          <button type="submit" class="btn" onclick="">Send</button>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <button type="reset" class="btn">Reset</button>
+        </div>
       </div>
-    </div>
-    <div class="row m-3">
-      <div class="col d-flex justify-content-center">
-        <button type="submit" class="btn">Send</button>
-      </div>
-      <div class="col d-flex justify-content-center">
-        <button type="reset" class="btn">Reset</button>
-      </div>
-    </div>
+    </form>
   </div>
   <footer class="container mt-5 mb-3 footer-section">
     <div class="row mt-3">
