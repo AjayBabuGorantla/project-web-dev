@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', function(){
         if (window.scrollY > 50) {
             document.getElementById('navbar').classList.add('fixed-top');
             navbarHeight = document.querySelector('.navbar').offsetHeight;
-            // document.body.style.paddingTop = navbarHeight + 'px';
         }
         else{
             document.getElementById('navbar').classList.remove('fixed-top');
-            // document.body.style.paddingTop = '0';
         }
     })
 })
@@ -16,7 +14,7 @@ document.querySelector(".contact").addEventListener('submit', function(event){
     let inputName = document.getElementById("name").value
     let inputEmail = document.getElementById("email").value
     let inputMessage = document.getElementById("message").value
-    // console.log(inputName)
+
     var regExpression = /\S+@\S+\.\S+/
     
     if((inputName==="")||(inputEmail==="")||(inputMessage==="")){
@@ -72,9 +70,6 @@ document.querySelector(".contact").addEventListener('submit', function(event){
 })
 
 document.querySelector(".contact").addEventListener('reset', function(event){
-    let inputName = document.getElementById("name").value
-    let inputEmail = document.getElementById("email").value
-    let inputMessage = document.getElementById("message").value
 
     let formElement = document.getElementById("contact-form")
     formElement.reset()
