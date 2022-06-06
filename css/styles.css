@@ -117,6 +117,13 @@
     width: 288px;
 }
 
+.project-title{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #495fa6;
+}
+
 .footer-section{
     border-top: solid;
     border-color: #495fa6;
