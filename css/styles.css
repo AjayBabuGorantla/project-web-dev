@@ -51,8 +51,8 @@
     padding: 40px;
 }
 
-.about-row .description{
-    text-align: justify;
+.streched-link-hidden{
+    display: none;
 }
 
 .work-experience .heading{
@@ -78,9 +78,6 @@
     border: solid;
     border-width: 3px;
     border-color: #495fa6;
-}
-.job-description{
-    text-align: justify;
 }
 
 .heading{
