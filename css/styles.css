@@ -1,7 +1,21 @@
+.visuallyHidden{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
 .navbar{
     padding: 0px;
 }
 
+.navbar-holder{
+    background-color: white;
+}
 .navbar-nav .nav-item{
     /* margin: 30px; */
     background-color: #495fa6;
@@ -36,7 +50,11 @@
 }
 
 .about-row{
-    padding: 5em;
+    padding: 40px;
+}
+
+.about-row .description{
+    text-align: justify;
 }
 
 .work-experience .heading{
@@ -49,6 +67,16 @@
     border-style: solid;
     border-radius: 5px; */
     border-radius: 20px;
+}
+
+.work-item .job-title{
+    text-align: center;
+    color: #495fa6;
+}
+
+.work-item .date{
+    text-align: center;
+    color: #495fa6;
 }
 
 .work-item:hover{
@@ -91,6 +119,7 @@
     border: #f6ae84;
     border-style: solid;
     border-width: 3px;
+    width: 288px;
 }
 
 .footer-section{
@@ -117,4 +146,51 @@
 
 .bootstrap-link:hover{
     color: #f6ae84;
+}
+
+
+@media (max-width: 768px){
+    .btn{
+        margin: 5px;
+    }
+
+
+}
+
+@media (max-width: 992px){
+    .navbar-nav .nav-item{
+        /* margin: 30px; */
+        background-color: #495fa6;
+        padding: 0px;
+        background-size:contain;
+        /* border-radius: 15px; */
+        width: 100%;
+        margin: 0;
+    }
+
+    .profile-pic{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-row .description{
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .profile-pic-holder{
+        padding: 5em;
+    }
+
+    .about-row .description{
+        text-align: center;
+    }
+}
+
+@media (max-width: 476px)  {
+    .profile-pic{
+        width: 100%;
+    }
 }

@@ -16,10 +16,11 @@
 
 </head>
 <body>
+  <h1 class="visuallyHidden">Ajay Babu Gorantla</h1>
   <header class="header-section mb-4">
     <div class="main-menu">
       <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-holder">
           <div><a class="navbar-brand " href="#"><img src="img/icons8-code-85.png" alt="logo"></a></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,29 +45,33 @@
       </nav>
     </div>
   </header>
-  <div class="container mx-8 mt-5 about" id="about">
+  <section class="container mx-8 mt-5 about" id="about">
     <div class="row about-row">
-      <div class="col m-auto">
-        <img src="img/Profile_Pic.jpg" class="rounded-circle" alt="Profile Picture" width="300" height="300"/>
+      <div class="col-sm-12 col-md m-auto profile-pic-holder">
+        <img src="img/Profile_Pic.jpg" class="rounded-circle profile-pic" alt="Profile Picture" width="300" height="300"/>
       </div>
       <div class="col">
-        <p class="fs-2">Hi! glad you are here.</p>
-        <p class="fs-2">I am Ajay, a Computer Science graduate student at Portland State University.</p>
-        <p class="fs-2">I love solving problems. I feed on that curiosity to survive</p>
-        <p class="fs-2">You can either find me infront of the screen coding or taking pictures, playing basketball, watching stand up comedy or cooking.</p>
+        <p class="fs-2 description">Hi! glad you are here.</p>
+        <p class="fs-2 description">I am Ajay, a Computer Science graduate student at Portland State University.</p>
+        <p class="fs-2 description">I love solving problems. I feed on that curiosity to survive</p>
+        <p class="fs-2 description">You can either find me infront of the screen coding or taking pictures, playing basketball, watching stand up comedy or cooking.</p>
       </div>
     </div>
-  </div>
-  <div class="container work-experience" id="work-experience">
+  </section>
+  <section class="container work-experience" id="work-experience">
     <div class="d-flex justify-content-center mb-5">
-      <p class="fs-2 heading">My Past Work Experience</p>
+      <h2 class="fs-2 heading">My Past Work Experience</h2>
     </div>
     <div class="row work-item m-3 shadow">
         <div class="col m-auto">
           <img src="img/cyient-slate-std-rgb.jpg " class="rounded-circle mx-auto d-block" alt="Cyient Logo" width="200" height="200"/>
+          <div>
+            <p class="fs-4 fst-italic job-title">Software Development Intern</p>
+            <p class="fs-4 fst-italic date">Dec 2019 - May 2020</p>
+          </div>
         </div>
-        <div class="col p-4 job-description">
-          <div class="justify-content-end date"></div>
+        <div class="col p-4 job-description justify-content-center">
+          <!-- <div class="justify-content-end date"></div> -->
           <p class="fs-4">Used transfer learning on YOLOv2 deep neural net to redeuce image annotation time of images with distortions and color imbalances from days to hours</p>
           <p class="fs-4">Developed a tool for US Wells that automates the process of extracting sepcific regulatory data like API and 
             Permit numbers from high volume of oil commision regulatory documents(pdf) usng pytessract's OCR, 
@@ -79,15 +84,19 @@
     <div class="row work-item m-3 shadow">
       <div class="col m-auto">
         <img src="img/New_Tech_M_Logo_High-res_highres.jpg " class="rounded-circle mx-auto d-block" alt="Cyient Logo" width="200" height="200"/>
+        <div>
+          <p class="fs-4 fst-italic job-title">Software Tester</p>
+          <p class="fs-4 fst-italic date">May 2018 - July 2018</p>
+        </div>
       </div>
-        <div class="col p-4 job-description">
+        <div class="col p-4 job-description m-auto">
           <p class="fs-4">Implemented behavioral testing using Python and Selenium to improve the end user experience of Data Quality Tool for American Bureau of Shipping(ABS)</p>
         </div>
     </div>
-  </div>
-  <div class="container mt-5 projects" id="projects">
+  </section>
+  <section class="container mt-5 projects" id="projects">
     <div class="d-flex justify-content-center mb-5">
-      <p class="fs-2 heading">Projects</p>
+      <h2 class="fs-2 heading">Projects</h2>
     </div>
     <div class="row m-3">
       <div class="col m-2 d-flex justify-content-center">
@@ -119,39 +128,39 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container mt-5 contact" id="contact">
+  </section>
+  <section class="container mt-5 contact" id="contact">
     <div class="d-flex justify-content-center mb-5">
-      <p class="fs-2 heading">Interested in speaking to me?</p>
+      <h2 class="fs-2 heading">Interested in speaking to me?</h2>
     </div>
     <form action="" id="contact-form">
       <div class="row m-3">
         <div class="col">
-          <label for="input-name" class="form-label">Name</label>
+          <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" placeholder="Ex: Ajay Babu Gorantla" aria-label="name" id="name">
         </div>
         <div class="col">
-          <label for="input-email" class="form-label">Email</label>
+          <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" placeholder="username@host.com" aria-label="email" id="email">
         </div>
       </div>
       <div class="row m-3">
         <div class="col">
-          <label for="input-message" class="form-label">Message!</label>
+          <label for="message" class="form-label">Message!</label>
           <textarea class="form-control" id="message" rows="5" placeholder="Feel free to be yourself :)" aria-label="message"></textarea>
         </div>
       </div>
       <div id="alertPlaceHolder"></div>
       <div class="row m-3">
-        <div class="col d-flex justify-content-center">
-          <button type="submit" class="btn" onclick="">Send</button>
+        <div class="col d-flex justify-content-center m-auto">
+          <button type="submit" class="btn" onclick="" id="submitButton">Send</button>
         </div>
-        <div class="col d-flex justify-content-center">
-          <button type="reset" class="btn">Reset</button>
+        <div class="col d-flex justify-content-center m-auto">
+          <button type="reset" class="btn" id="resetButton">Reset</button>
         </div>
       </div>
     </form>
-  </div>
+  </section>
   <footer class="container mt-5 mb-3 footer-section">
     <div class="row mt-3">
       <div class="col">
